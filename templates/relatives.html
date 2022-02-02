@@ -1,0 +1,30 @@
+{% extends "layout_window.html" %}
+
+{% block main %}
+
+<div class="container-fluid" style="text-align:center; margin-top: 30px;">
+    <p>To add {{ name }} to the tree, choose one their relative, that is already in the tree</p>
+    <p>Choose one person, they are related to. <br> It can be their parent, partner, child or sibling.</p>
+    <form action="/relatives" method="post">
+        <div class="form-group">
+            <select class="custom-select" id="relative" name="relative" style="width:200px; font-size:20px">
+                <option selected disabled style="font-size: 20px;">Select</option>
+                {% for i in people %}
+                <option style="font-size: 20px;" value="{{ i }}">{{ i }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="form-group" style="margin-top:100px;">
+            <button class="btn btn-outline-primary btn-lg" type="submit">Next</button>
+        </div>
+
+    </form>
+
+    {% if message1 %}
+    <div class="alert alert-danger">{{ message1 }}</div>
+    {% endif %}
+
+</div>
+
+{% endblock %}

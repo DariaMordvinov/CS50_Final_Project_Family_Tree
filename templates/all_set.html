@@ -1,0 +1,13 @@
+{% extends "layout_window.html" %}
+
+{% block main %}
+
+<main class="container p-5 information">
+    <p>You're all set! Want to add some more people or go back to the tree?</p>
+    <div class="buttons">
+        <a href="/information" class="btn btn-outline-primary" role="button">Add another person</a>
+        <button class="btn btn-outline-primary" onclick="redirect()">Go to the tree</button>
+    </div>
+</main>
+
+{% endblock %}

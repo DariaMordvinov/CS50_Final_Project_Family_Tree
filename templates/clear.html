@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block style %}
+<link href="static/styles.css" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Delete my account{% endblock %}
+{% block main %}
+
+<main class="container p-5 clear">
+     <form action="/clear" method="post" style="width: 400px; margin: auto;">
+         <h3>Are you sure you want to delete your account?</h3>
+         <div style="text-align: center; margin-top: 30px;">
+          <a href="/my_tree" role="button" style="margin-right: 30px;" class="btn btn-outline-dark">No</a>
+           <div class="form-group" style="display:inline">
+               <button class="btn btn-outline-dark" type="submit">Yes</button>
+           </div>
+             </div>
+     </form>
+</main>
+
+
+{% endblock %}

@@ -1,0 +1,88 @@
+.jumbotron {
+    background-image: linear-gradient(to right, #24C267, #2ECC71, #82E0AA, white);
+    color: white;
+}
+
+#tree {
+    text-align: center;
+}
+
+.generation {
+    margin-top: 4rem;
+}
+
+.person {
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    margin-right: 32px;
+    margin-left: 32px;
+    padding: 0.9rem;
+    border: 0.1rem solid #82E0AA;
+    color: white;
+    background-color: #82E0AA;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 17px;
+    display: inline;
+}
+
+.person:hover {
+   background-color: #2ECC71;
+}
+
+.undefined:hover {
+   background-color: #82E0AA;
+
+}
+
+.svg  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.line  {
+    z-index: 0.5;
+    position: absolute;
+    stroke-width:0.1rem;
+    stroke: #82E0AA;
+    fill: none;
+}
+
+.line2{
+    stroke-width:0.1rem;
+    stroke-dasharray:5,5;
+    stroke: #82E0AA;
+    fill: none;
+}
+
+h5 {
+   color: grey;
+   text-decoration: none;
+}
+
+h5:hover, a:hover, a:active{
+   color: white;
+   text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .person {
+        font-size: 0.5rem;
+        padding: 0.08rem;
+        margin: auto;
+    }
+
+    .line {
+        padding: 0.1rem;
+    }
+}
+
+
+
+

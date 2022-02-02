@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block style %}
+<link href="static/style_tree.css" rel="stylesheet">
+{% endblock %}
+
+{% block title %}My tree{% endblock %}
+{% block main %}
+
+<script>
+
+var couples = {{ couples|tojson }};
+var genetic = {{ genetic|tojson }};
+var generations = {{ generations|tojson }};
+
+</script>
+
+<div id = "box" class="tree" style="overflow: visible;
+    white-space: nowrap;" >
+
+<!-- In the 'tree' div we going to unfold user's family tree -->
+    <div id="tree">
+    </div>
+</div>
+<svg class="svg"></svg>
+<!-- This is svg element for drawing connectors between relatives -->
+
+<script src="static/tree.js"></script>
+
+{% endblock %}
+
+<!--     # Create a table of connections for this user. There will be 4 columns: generation_id, parent_1, parent_2, child.
+        # In each column (except generation_id) will be stored person_id. The name of the table = user_id.
+        # User's generation_id = 100 by default.
+        table_name = str(db.execute("SELECT id FROM users WHERE username = ?", request.form.get("username"))[0]["id"])
+        db.execute("CREATE TABLE ? (generation_id INTEGER NOT NULL, child INTEGER, parent_1 INTEGER, parent_2 INTEGER)", table_name) -->

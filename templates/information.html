@@ -1,0 +1,32 @@
+{% extends "layout_window.html" %}
+
+{% block main %}
+
+    <div class="container-fluid" style="margin-top:3rem;">
+         <form action="/information" method="post" style="width: 400px; margin: auto;">
+      <div class="form-group" style="text-align: center;">
+          <input autocomplete="off" autofocus class="form-control" name="first_name" placeholder="First Name" type="text">
+          <br>
+          <input autocomplete="off" autofocus class="form-control" name="last_name" placeholder="Last Name" type="text">
+          {% if message1 %}
+          <div class="alert alert-danger">{{ message1 }}</div>
+          {% endif %}
+          <br>
+          <div style="text-align: center;">
+              <label for="birth" style="color: grey; margin-bottom: 1rem; font-size: 20px;">Date of birth:</label>
+              <input type="date" id="birth" name="birth" value="" min="1600-01-01" max=CurrentDate() style="color: grey;"><br>
+              {% if message2 %}
+              <div class="alert alert-danger">{{ message2 }}</div>
+              {% endif %}
+              <label style="color: grey; margin-bottom: 1rem; font-size: 20px;" for="death">Date of death:</label>
+              <input type="date" id="death" name="death" value="" min="1600-01-01" max=CurrentDate() style="color: grey;">
+          </div>
+      </div>
+
+        <div class="form-group" style="text-align: center;">
+                <button class="btn btn-outline-primary btn-lg" type="submit">Next</button>
+        </div>
+         </form>
+    </div>
+
+{% endblock %}

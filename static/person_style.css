@@ -1,0 +1,52 @@
+
+
+p {
+    color: grey;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+
+option {
+    padding: 100px;
+}
+
+select {
+    margin-right: 55px;
+}
+
+h3 {
+   color: grey;
+}
+
+.parent {
+    width: 200px;
+}
+
+.information {
+    margin-top: 30px;
+    border-radius: 25px;
+    width: 800px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: Verdana;
+    color: grey;
+    background-color: #F9FFF9;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 20px;
+
+}
+
+.buttons {
+    text-align: center;
+}
+
+
+
+
+

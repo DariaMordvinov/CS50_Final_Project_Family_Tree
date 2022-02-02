@@ -1,0 +1,158 @@
+.jumbotron {
+    background-image: linear-gradient(to right, #2ECC71, #82E0AA);
+    color: white;
+}
+
+.profile {
+    margin: auto;
+    text-align: center;
+}
+
+.middle {
+    font-family:  'Raleway', sans-serif;
+}
+
+.headline {
+    margin-top: 10px;
+    color: black;
+    font-size: 36px;
+}
+
+.dates {
+    font-size: 24px;
+}
+
+.text {
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+.navbar {
+    color: white;
+    margin-top: 10px;
+}
+
+li a{
+    display: block;
+}
+
+ul {
+   background-color: rgba(130, 224, 170, 0.3);
+   border-radius: 10px;
+   padding-right: 10px;
+   padding-top: 10px;
+}
+
+
+.alert-danger {
+    margin-top: 10px;
+}
+
+h4 {
+   color: grey;
+   border-top: solid 2px grey;
+   padding: 5px;
+}
+
+h5 {
+   color: grey;
+}
+
+h5:hover, a:hover, a:active{
+   color: white;
+   text-decoration: none;
+}
+
+.birth {
+   margin-right: 30px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+option {
+   height: 20px;
+}
+
+
+.form-popup {
+  display: none;
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  margin: auto;
+  left: 38%;
+  top: 38%;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.delete_person {
+    margin-top: 30px;
+}
+
+.clear {
+    margin: auto;
+    margin-top: 30px;
+    color: grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+    width: 600px;
+    background-color: #F9FFF9;
+}
+
+.deleting {
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    color: grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+    width: 600px;
+    background-color: #F9FFF9;
+    font-size: 20px;
+}

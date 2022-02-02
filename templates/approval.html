@@ -1,0 +1,60 @@
+{% extends "layout_window.html" %}
+
+{% block main %}
+
+<main class="container p-5 information">
+    <h4 style="text-align:center; color:grey">Person, you want to add to the tree is:</h4>
+    <ul>
+        <li><b>Name:</b> {{ name }}</li>
+        <li><b>Date of birth:</b> {{ birth }}</li>
+        {% if death %}
+        <li><b>Date of death:</b> {{ death }}</li>
+        {% endif %}
+        {% if partner %}
+        <li><b>Spouse/partner:</b> {{ partner }}</li>
+        {% endif %}
+        {% if children %}
+        <li><b>Children:</b> {% for child in children %}
+                          {% if child == children[-1] %}
+                               {{ child }}
+                          {% else %}
+                               {{ child }},
+                          {% endif %}
+                      {% endfor %}
+        </li>
+        {% endif %}
+        {% if siblings %}
+        <li><b>Siblings:</b> {% for sib in siblings %}
+                          {% if sib == siblings[-1] %}
+                               {{ sib }}
+                          {% else %}
+                               {{ sib }},
+                          {% endif %}
+                      {% endfor %}
+        </li>
+        {% endif %}
+        {% if parents %}
+        <li><b>Parents:</b> {% for parent in parents %}
+                          {% if parent == parents[-1] %}
+                               {{ parent }}
+                          {% else %}
+                               {{ parent }},
+                          {% endif %}
+                      {% endfor %}
+        </li>
+        {% endif %}
+    </ul>
+
+
+   <div class="buttons">
+       <form action="/approval" method="post" style="display:inline;">
+           <a href="/information" role="button" style="margin-right: 30px;" class="btn btn-outline-danger">No, I want to start other</a>
+           <div class="form-group" style="display:inline">
+               <button class="btn btn-outline-success" type="submit">Yes, everything is correct</button>
+           </div>
+       </form>
+   </div>
+
+</main>
+
+{% endblock %}

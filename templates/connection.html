@@ -1,0 +1,29 @@
+{% extends "layout_window.html" %}
+
+{% block main %}
+
+<div class="container-fluid" style="text-align:center; margin-top: 30px;">
+    <h3>How is {{ name }} related to {{ relative }} ?</h3>
+    <form action="/connection" method="post" style="margin-top:30px">
+        <div class="form-group">
+            <label for="connection" style="color: grey; margin-bottom: 1rem; font-size: 20px;">They are their...</label>
+             <select class="custom-select" id="connection" name="connection" style="width:200px; font-size:20px">
+                 <option selected disabled style="font-size: 20px;">Select</option>
+                {% for i in relationships %}
+                <option style="font-size: 18px;" value="{{ i }}">{{ i }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="form-group" style="margin-top:100px;">
+            <button class="btn btn-outline-primary btn-lg" type="submit">Next</button>
+        </div>
+    </form>
+
+    {% if message1 %}
+    <div class="alert alert-danger">{{ message1 }}</div>
+    {% endif %}
+
+</div>
+
+{% endblock %}
