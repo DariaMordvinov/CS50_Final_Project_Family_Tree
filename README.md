@@ -3,7 +3,7 @@
 #### Video Demo:  https://youtu.be/bj0dWR8iX2M
 #### "Family Tree" is a Flask application for creating your own family tree. 
 
-This is my final project for the CS50x studying course. To create this project I used Python, Java Script, HTML, CSS, Jinja and jJQuery. It also uses SQL database.
+This is my final project for the CS50x studying course. To create this project I used Python, Java Script, HTML, CSS, Jinja and JQuery. It also uses SQL database.
 This is a Flask application that allows users to create their own family trees. User can register on the website, login
 and logout, add his relatives to the tree, delete relatives, add photos and description to relatives' profiles. User can 
 also delete his/her own account. On the "my_tree" page user can see visualised version of his family connections.
