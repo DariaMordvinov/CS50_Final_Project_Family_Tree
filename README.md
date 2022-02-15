@@ -1,6 +1,6 @@
 # CS50 Final Project: Family Tree
 
-#### Video Demo:  https://youtu.be/bj0dWR8iX2M
+#### [Video Demo](https://youtu.be/bj0dWR8iX2M)
 #### "Family Tree" is a Flask application for creating your own family tree. 
 
 This is my final project for the CS50x studying course. To create this project I used Python, Java Script, HTML, CSS, Jinja and JQuery. It also uses SQL database.
